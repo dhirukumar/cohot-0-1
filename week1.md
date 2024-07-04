@@ -123,6 +123,9 @@
 //   console.log("sum's of result is " +data);
 // }
 // const a=sum(2,2,passive);
+//console.log(sum(1,3,sub));   /*it gives undifine because 
+                                   we not gives return in sum 
+                                       function*/
 
    //you can also solve this upper problem by this
 
@@ -170,4 +173,10 @@
 //                          you want 2sec gap than you type 2000*/
 //  }
 // setInterval(you,4000);
+
+  //another way to define function
+// function ok(p1,p2){
+//   console.log(p1,p2);
+// }
+// setTimeout(ok,2000,"dhiru","ankit")
 
