@@ -538,3 +538,4 @@
 //just for try
 // const [a, ,b]=[1,2,3,4,5];
 // console.log(a,b);//output will be 1 3
+
