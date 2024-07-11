@@ -539,3 +539,80 @@
 // const [a, ,b]=[1,2,3,4,5];
 // console.log(a,b);//output will be 1 3
 
+# lec 3
+
+// lec-3
+
+//method of doing sum by for loop
+// let sum=0 ;
+// for(i=0;i<=50;i++){
+//     sum=sum+i;
+// }
+// console.log(sum);
+
+
+//method of doing sum by function
+// function ok(n){  //n in this case called paramiter
+//     let sum=0;
+//     for(let i=0;i<=n;i++){
+//     sum=sum+i;
+//     }
+//     return sum;
+// }
+// console.log("sum of number till 50",ok(50));
+
+//sum of number 
+// this code brek the rule of computer science in DRY(don't repite yourself)
+// let n1=100;
+// let ans1=0;
+// for(i=0;i<=n1;i++){
+//     ans1=ans1+i;
+// }
+// let n2=1000;
+// let ans2=0;
+// for(i=0;i<=n2;i++){ 
+//     ans2=ans2+i
+// }
+// console.log(ans1);
+// console.log(ans2);
+
+
+//this code for understand that we can call function inside function 
+// function sqr(n){ //function for squar the number
+//     return n*n;
+// }
+// function sumOfsqr(a,b){ //we can call function inside function
+//     const e=sqr(a);
+//     const f=sqr(b);
+//     return e+f;
+// }
+// console.log(sumOfsqr(2,2));
+
+
+//use case of callback function callback function
+// function sumOfsqr(a,b,callback){ 
+//     return callback(a)+callback(b); //we need to write on which parameter you want to do callback function
+// }
+// function sqr(n){ 
+//         return n*n;
+//     }
+//     console.log(sumOfsqr(2,2,sqr));
+ 
+
+//also use of callback or fn function
+// function sqr(n){
+//     return n*n;
+// }
+// function cube(n){
+//     return n*n*n;
+// }
+// function sumof(a,b,fn){
+//     return fn(a)+fn(b);
+// }
+// console.log(sumof(2,2,cube));//call by function name in parameater
+
+
+# lec 4
+
+
+
