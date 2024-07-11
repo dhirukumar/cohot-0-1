@@ -1,3 +1,5 @@
+## otherthings:-1)loupe for watch how javascripte run line by nline 
+
 # lec 1
 
 // let firestname="dhiru"; //let and vare same
