@@ -617,4 +617,217 @@
 # lec 4
 
 
+//dalegate the function by useing the setTimeout function which is a async function 
+// function sumof(n){
+//     let sum =0;
+//     for(i=0;i<=n;i++){
+//         sum+=i;
+//     }
+//     return sum;
+// }
+// function weit(){
+//    console.log(sumof(1000000));
+// }
+// console.log(sumof(10000000));//this is the ex of sync function because it first excute the sumof function and then print "hellow world" 
+// console.log(setTimeout(weit,1000));//when i was return this function in weit function after that it not showes ruselt
+// setTimeout(weit,100);//after log the weit function **(this is ex of async function because it dalicate the sumof function for 1000milisecondes )
+// console.log("hellow world");//it printed on firest after 1000milisecondes the sumof function printed
+// setTimeout(function weit(){//the real callback function used in asynk function
+//     console.log(sumof(1000000));
+//  },1000);
+//  console.log("hellow world");
+
+//another examples of async function 
+// const fs=require("fs");
+// fs means file system
+// fs.readFile("file.txt","utf-8",function(err,data){//this fs.readFile used to to dalicate the thread to read a file and do other things in this case print h ha ha ha 
+//     console.log(data); //save the file like a.txt
+//     console.log(err);//gives you the error that occur in file that you want to read 
+// })
+// console.log("h ha ha ha ");
+
+
+//how the threds work when i use async function
+// const fs=require("fs");
+// fs.readFile("file.txt","utf-8",function(err,data){ //this is async function so it take time to read file
+//     console.log(data); 
+
+// })
+// console.log("h ha ha ha ");//fiest print this because file take time to read
+// //this lower for loop takes more time than the read file so which is the excuted 
+// let a=1;
+// for(i=0;i<1000000000;i++){//second this function excuted because thered goes end and then take the readFile but this for loop not give any output
+//     a++;
+// } 
+// console.log("ha ha ha ha ha aha ahah ahh a hah");//third log is printed after that take the readFile output
+
+
+//doing by another methode 
+//  const fs=require("fs");
+//  function okk(bb){//callback the function like done function in this function
+// fs.readFile("file.txt","utf-8",function(err,data){
+//     // console.log(err);
+//     bb(data);//function which work on data
+// });
+//  }
+//  function done(data){
+//     console.log(data);
+//  }
+//  okk(done);
+
+
+//promises in stede of callback and how the code run inside the mack 
+// const fs=require("fs");//require is v.v.i in this place
+// function ok(){
+//     console.log("before promises")
+//     return new Promise(function(resolve) {//this is the universal syntax in promises you can put anything in this function open brackets
+//         fs.readFile("file.txt","utf-8",function(err,data){//this is async function thats why it goes out side the function
+//             console.log("inside promises")
+//             return resolve(data)//and also use the word that you use in that upper function
+//         });
+//       console.log("after promises")
+//     })
+    
+//     }
+//     function done(data){
+//         console.log(data);
+// }
+// ok().then(done);
+
+
+// function ok(){
+//     return new Promise(function sum(tt){//in this place the name of function is not nessery because there no use case of sum
+//         let sumof=0;
+//         for(i=0;i<=100;i++){
+//         sumof+=i;
+//         }
+//         tt(sumof);
+//     }) 
+// }
+// function ee(sumof){
+//     console.log(sumof);
+// }
+// ok().then(ee);
+
+ 
+
+//promise
+// let a=new Promise(function (ok){
+//     ok();
+// })
+// let b=("hey dhiru");
+// console.log(b);
+//  a.then(b)
+
+
+//promises pending
+// let a=new Promise(function(){  //promise pending
+// })
+// console.log(a)
+
+
+//promises undifine
+// let a=new Promise(function(ok){
+//     ok()//it gives undifine because we can not define anything inside this ok
+// })
+// function b(a){//this function basically log the a
+//     console.log(a);
+// }
+// a.then(b)
+
+
+
+//nice example of use case of promises and setTimeOut
+// let a=new Promise(function(tt){
+//     setTimeout(function(){
+//         tt("hey dhiru")
+//     },2000)
+// })
+// function b(){
+//     console.log(a);
+// }
+// console.log(a);
+// a.then(b);
+
+
+//we can also write this code in this form
+// function ok(){
+//     return new Promise(function(tt){
+//         tt("hey there");
+//     });
+// }
+// ok().then(function(ok){
+//     console.log(ok);
+// })
+
+//***without promise */
+// function kk(fn){
+//     setTimeout(fn,2000);
+//     return fn;
+// }
+// function done(){
+//     console.log("hey dhiru")
+// }
+// kk(done);
+
+
+// with promises
+// function dd(){
+//     return new Promise(function(data){//alway try to set data in first positions and just put those things which is use like data but not err
+//        setTimeout(function(){
+//         data();
+//        },2000);
+//     });
+// }
+// function done(){
+//     console.log("hey dhiru")
+// }
+// dd().then(done);
+
+
+///**************await async(normal) */
+// function dd(){
+//     return new Promise(function(data){
+//         data();
+//     })
+
+// }
+// function main(){
+//     dd().then(function(){
+//         console.log("hey dhiru")
+//     });
+    
+// }
+// main();
+
+
+//*****************await async(advance) */
+// function dd(){
+//     return new Promise(function(data){
+//         data("hey dhiru"); 
+//     })
+// }
+// async function main(){
+//     let a=await dd();
+//     console.log(a)
+// }
+// main();
+
+
+
+//how the async await code stuck in await example
+// function dd(){
+//     return new Promise(function(data){
+//         setTimeout(function(){
+//            data("hey dhiru")
+//         },2000)
+//     })
+// }
+// async function main(){
+//     let a=await dd();//thread wait hear to complete the promise
+//     console.log("hey dhiru singh")
+//     console.log(a)
+// }
+// main();
+
 
