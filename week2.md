@@ -160,7 +160,7 @@
 
 1.)pwd (print working directory):-it gives you where yoyu are now
 
-     pw
+     pwd
 
 2.)cd (change directory):-it help you to change the directory
 
