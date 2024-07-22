@@ -202,7 +202,7 @@ and then you get out from file and you can see your changes in by
 
 9.)how to move file from one place to another file
 
-     mv (file you want to move) (file name you want to move) (mv means move)
+     mv (file you want to move) (file name you want to save) (mv means move)
 
 10.)how to copy file one folder to another folder :-this only work for copy file from one folder to another folder 
 
@@ -233,10 +233,79 @@ and then you get out from file and you can see your changes in by
 
 
 
+# lec 3(advance terminal and bash)
+
+1.)this command to know all details of any file and any things for this you need to at that place wher you want to know  
+
+      ls -l
 
 
+ 2.)if you want to delete the folder then
 
+      rm -r (folder name)
 
+ 3.)if you want to see all file and folder in reverse oder
+
+        ls -r
+
+4.)if you want to putout some specfic file then
+
+      ls -l | grep .json,md,yamal (after . put file name fater .)
+      ls -lr | grep .json,md,yamal (in this case you getout in reverse oder)
+
+5.) if you want to say anything from your mack go to terminal
+
+         say (type what ever you want to say)
+
+6.)if you want to write in file you can use vi (file name) and also use cat
+
+        cat > (file name)
+        (for save file controle + d)
+if you want to add something new to this file then 
+
+      cat >> file
+      (for save control+d)
+
+ 7.) if you want to change the file or folder name 
+
+     mv (file and folder name you want to c hange)  (name you want but it is new name that not exist in you system)
+
+ 8.)if you want to copy the directory to another directory
+
+       cp -r (folder name you want to move) (the place you want to move yoour folder)
+
+ 9.)for remove the folder 
+
+     rm -r (folder name)
+
+ 10.)if you want to know all the hidden files and folder for that(hidden folder starts with . )
+
+    ls -a
+
+ 11.)if you want to delete the hidden folder
+
+       rm -rf (.folder name)
+
+ 12.)if you want to print any things you want 
+ 
+        echo "message"
+     
+        
+
+13.)if you want to find path 
+
+      echo $path
+      (if you want to check then cd past path)
+
+ 14.)if you want to see occurence of particuler word in whice line of your code 
+
+      grep (the word) (in which file)
+      
+15.) if you want to see in how many line the particular word occur
+
+      grep -c (word) (file)
+
+16.)
 
 
 
