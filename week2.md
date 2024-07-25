@@ -309,11 +309,162 @@ if you want to add something new to this file then
 
 
 
+# lec 4(get,post,put,delete methodes)
+
+/*v.v.i:-.send() send only string
+
+.json() send string and number both*/
 
 
+// let express=require("express")
+
+// let app=express();
+
+// let port=3001;
+
+// app.use(express.json()) //it is use in post method to parse the body value into updated anythins
+
+// let user=[{name:"dhiru", //arrary object
 
 
+// kidneys:[{ //inside arrey object
 
+//     helthey:false,
+
+    
+// },{
+
+//     helthey:true
+
+// }]
+
+// }];
+
+// console.log(user[0]); 
+
+// app.get("/",(req,res)=>{
+
+//     let countofkidney=user[0].kidneys.length;
+
+//     let dhiruhelth=user[0].kidneys;
+
+//     for(i=0;i<user[0].kidneys.length;i++){
+
+//         let countofhelheykidney=0;
+
+//         if(user[0].kidneys.helthey===true){
+
+
+//             countofhelheykidney+=i;
+
+//         }
+
+//     }
+
+//     res.json({//you need to write all the res in one line
+
+//         countofkidney,
+
+//         dhiruhelth,
+
+//         // countofhelheykidney
+        
+// })
+
+// })
+
+
+// app.post("/",(req,res)=>{
+
+//  let ishelthey=req.body.ishelthey
+
+//  user[0].kidneys.push({ //use open with curli bracket
+
+//     helthey:ishelthey
+
+//  })
+
+//  res.json({mess:"done"})
+
+// })
+
+// app.listen(port,console.log(
+
+//    `sit is running on ${port}`
+
+// ))
+
+
+// app.put("/",(req,res)=>{
+
+//     for(i=0;i<user[0].kidneys.length;i++){
+
+//         user[0].kidneys[i].helthey=true;
+
+//     }
+
+
+//     res.json("ok")
+
+// })
+
+//removing unhelthey kidney
+
+// app.delete("/",(req,res)=>{
+
+//     const newkidney=[]
+
+//     for(i=0;i<user[0].kidneys.length;i++){
+
+//         user[0].kidneys[i].helthey=false;
+
+//         newkidney.push({
+
+//             helthey:true
+
+        
+//         })
+
+//     }
+
+//     user[0].kidneys=newkidney;
+
+//     res.json({mess:"ok"})
+
+// })
+
+// let express=require("express");
+
+// let app=express();
+
+// let port=3002;
+
+
+// function ok(n){
+
+//     let sum=0;
+
+//     for(i=0;i<=n;i++){
+
+//         sum+=i
+
+//     }
+
+//     return sum
+
+// }
+
+// app.get("/",(req,res)=>{
+
+//     let n=req.query.n;
+
+//     let sumof=ok(n);
+
+//     res.send(sumof.toString) //.toString() is very inportant to send data in number or you can use json in place of send because it send direct send number or string
+
+// })
+
+// app.listen(port,console.log(`app is listen on ${port}`));
 
 
 
