@@ -468,7 +468,192 @@ if you want to add something new to this file then
 
 
 
+# lec 5
 
+//map ,filter ,arrrow function
+
+//without arrow method
+
+// function ok(a,b){
+
+// console.log(a+b);
+
+// }
+
+// ok(10,10)
+
+
+
+//arrow function
+
+// let ok=(a,b) => { //mainley use this function in those place in whice the name of function is not nesssery 
+
+//     console.log(a+b)
+
+// }
+
+// ok(10,30);
+
+//one dumb way
+
+// function ok(a,b,c,d,e){
+
+//     let p=[a,b,c,d,e]
+
+
+//     console.log(a*2,b*2,c*2,d*2,e*2)
+
+// }
+
+// ok(1,2,3,4,5);
+
+//another dumb way
+
+// let q=[1,2,3,4,5]    
+
+
+// const newr=[];
+
+//     for(i=0;i<q.length;i++){
+
+//         newr.push(q[i]*2) 
+
+// }
+
+// console.log(newr)
+
+
+//best way to solve upper problem using map function
+
+// let newarr=[1,2,3,4,5];
+
+// function ok(a){ 
+
+//     return a*2;
+// }
+
+// console.log(newarr.map(ok))//map take arr before . and after take a function in this function inside you maths formulas 
+
+// let newarr=[1,2,3,4,5];
+
+// console.log(newarr.map( (a)=>{ 
+
+//     return a*2;
+
+
+// }
+
+// )
+
+// )//map take arr before . and after take a function in this function inside you maths formulas 
+
+
+//filtering
+
+ //ugly methos 
+ 
+//  const arrr=[1,2,3,4,5,6];
+
+//  const newarr=[];
+
+//  for (i=0;i<arrr.length;i++){
+
+//     if (arrr[i]%2==0){
+
+//     newarr.push(arrr[i]) //the things you want to put inside empity arr at firest
+
+
+//     }
+
+//  }
+
+// console.log(newarr) 
+
+
+
+//anothe ugly method
+
+// const a=[1,2,3,4,5,6]
+
+// const c=[]
+
+// let ok=() => { //if oyou want to use arrow function then you need to undestand how to use it is used with const or let in outside
+
+//     for(i=0;i<a.length;i++){
+
+//         if(a[i]%2==0){
+
+//              c.push(a[i]) //if we write the return inside the if it try to exit as soon as possible but we want to to this at end of err for that we not use return inside the if in this case
+
+//         }
+
+//     }
+
+//     console.log(c)
+
+// }
+
+// ok()
+
+
+
+
+//by filter method
+
+// let a=[1,2,3,4,5,6];
+
+// ook=(d)=>{
+
+//     if (d%2==0){
+
+//         return true
+
+//     }
+
+//     else{
+
+//         return false
+
+//     }
+
+// }
+
+// let b=a.filter(ook)
+
+// console.log(b)
+
+
+
+//lets try to code in which we use all this filter,mapand arrow function
+
+// let a=[1,2,3,4,5,6,7,8];
+
+//  ok=(n)=>{
+
+//     if (n%2==0){
+
+//         return true;
+//     }
+
+//     else{
+
+//    return false
+
+//     }
+
+//  }
+
+//  let b=a.filter(ok)
+
+//  tt=(b)=>{
+
+//     return b*2
+
+//  }
+
+//  let c=b.map(tt)
+
+//  console.log(c)
 
 
 
