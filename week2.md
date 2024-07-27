@@ -656,7 +656,52 @@ if you want to add something new to this file then
 //  console.log(c)
 
 
+# lec 6
 
+## *)how to edit the repo that have in your github
+
+### 1.)type one edit and send to main branch to that repo and don't need to create new branch
+
+             git clone (HTTP url)
+   .)after you need to go into this repo
+
+           cd (git repo name)
+
+   .)after you need to check how many file exist in this repo for that
+
+          ls
+   .)if you want to check all contant of that file 
+
+        cat (file name)
+
+   .)and if you want to change naything from terminal in the code base of repo 
+
+       vi (file name)
+
+  .)make the all changes and then you want to save this changes for that
+
+       :w (for save change)
+       :q!(to get out from this file)
+
+.)you can use this upper command at a same time
+
+      :wq!
+
+ .)if you want to all changes like in which file and which line is add and what the line 
+
+    git diff 
+    (you should also use) git status
+
+ .)after that you need to add this all changes into your main branch of repo 
+
+     git add .
+     git commit -m "message"
+     git push
+
+ #### .)done your changes seen in your github repo
+
+
+  
 
 
 
