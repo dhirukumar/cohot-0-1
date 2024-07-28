@@ -788,9 +788,32 @@ if you want to add something new to this file then
 
        git push -u (remote name) (new branch name)
    12.)done you need to copy the url you got for send pull request and pest to crome sarch bar and send pull request)
- 
 
+   ### other thins that help you to delete anythins from terminal
 
+   1.)if you want to a directory that present into your destop and it showes overriding
+
+     rm -rf (folder namr)   (f means forsefuly) (r is baseclly used in delete the folder)
+
+   2.)if you inside a your git repo and want to delete any sub-file
+
+     rm -rf (file name)
+
+  3.)you are inside your git reppo and want to delete the branch 
+
+       git branch -D (branch name)
+4.)if you want to delete the remote 
+
+      git remote remove (remote name)
+ 6.)how to find the hidden file
+
+        ls -a
+        
+5.)how to delete the hidden file
+
+    rm -rf (hidden file that starts with .) (r is used when we delete the folder)
+
+  
 
 
 
