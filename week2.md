@@ -658,7 +658,7 @@ if you want to add something new to this file then
 
 # lec 6
 
-## *)how to edit the repo that have in your github
+## *)how to edit the repo that have in your github into main branch
 
 ### 1.)type one edit and send to main branch to that repo and don't need to create new branch
 
@@ -698,7 +698,7 @@ if you want to add something new to this file then
      git commit -m "message"
      git push
 
- #### .)done your changes seen in your github repo
+ #### .)done your changes seen in your github repo into new branch
 
 ### 2) if you want to add into your code into a new branch
 
@@ -740,7 +740,55 @@ if you want to add something new to this file then
       git push -u origin ok     (origine the remote name) (ok is the new branch name) 
       
 
-    
+  ### 3.)by the help of this command you can send pull request to some one and to self
+
+  #### you alway make new branch that have all changes and send the pull request vie that branch
+
+  1.)clone the repo into your computer
+
+      git clone (HTTP url of that repo )
+
+  2.)view the repo by
+
+      ls
+ 3.)enter that specfic file that you want to contribute
+
+     cd (file name)
+
+ 4.)see the contant of code by 
+
+      cat (file name that you want to see)
+
+  5.)you can make change the from terminal and by the use of any editor like vs code
+
+      vi (file name)
+      i (to incert the changes )
+      (press the esc batton for run this following command)
+      :wq! (to get out from the file)
+
+  6.)you need to make the new branch 
+
+      git branch (branch name)
+
+   7.)get enter into this new branch
+
+      git checkout (new branch name)
+   8.)you need to add a new remote
+
+   ##### remote:-remote is nothing it just work like linker.in remote you need to add the remote of that original github that you want to send pull request how you can do this by given command
+
+     git remote add (name of remote) (crome url of that github you want to send pull request url in this form:-(https://github.com/dhirukumar/my-Gsoc.git)
+  9.)you need to add the changes to your new branch 
+
+    git add .
+  10.)commit the changes
+
+     git commit -m "message"
+  11.)you need to push the changes to your github new branch ang also you got a url after run this command by this command you can send pull request)
+
+       git push -u (remote name) (new branch name)
+   12.)done you need to copy the url you got for send pull request and pest to crome sarch bar and send pull request)
+ 
 
 
 
