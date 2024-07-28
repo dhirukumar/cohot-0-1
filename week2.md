@@ -700,8 +700,47 @@ if you want to add something new to this file then
 
  #### .)done your changes seen in your github repo
 
+### 2) if you want to add into your code into a new branch
 
-  
+.)this is the command to push the change in our repo in new branch
+
+1.)fiest you need to clone the project from your github
+
+      git clone (HTTP url of your repo )
+2.)you need to go into that repo 
+
+       cd (repo file name)
+ 3.)after you need to go into that specfic file that you want to change
+
+       cd (file name)
+4.)you need to open this file you should open this file into your terminal and any editor 
+
+      vi (file nam)
+      i (for insert any change into that file)
+      (you need to press esc baton for run this lower command)
+      :wq! (for save the file and get out from that file)
+
+ 5.)you need to create the new branch
+
+     git branch (name of new branch name)
+ 6.)change the branch from main to new branch
+
+     git checkout (new branch name)
+7.)you can also use this two upper code at same time to create the new branch and change the branch
+
+        git checkout -b (name of branch you want to craeate and go to that branch )
+  8.)you need to add this changes to the new branch \
+
+       git add .
+9.)commit the change
+
+      git commit -m "message"
+ 10,)you shoude push the changes
+
+      git push -u origin ok     (origine the remote name) (ok is the new branch name) 
+      
+
+    
 
 
 
