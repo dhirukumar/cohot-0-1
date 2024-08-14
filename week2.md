@@ -154,7 +154,7 @@
 // });
 
 
-# lec2
+# lec2 (basic terminal & bash command)
 
 :)about terminla:-terminal is nothiongs but another way to hendel your computer common people use GUI(graphical user interface) but pro coder use terminal
 
