@@ -305,7 +305,7 @@ if you want to add something new to this file then
 
       grep -c (word) (file)
 
-16.)
+
 
 
 
