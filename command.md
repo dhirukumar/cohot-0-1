@@ -36,35 +36,35 @@
 
 :)about terminla:-terminal is nothiongs but another way to hendel your computer common people use GUI(graphical user interface) but pro coder use terminal
 
-1.)pwd (print working directory):-it gives you where yoyu are now
+.)pwd (print working directory):-it gives you where yoyu are now
 
      pwd
 
-2.)cd (change directory):-it help you to change the directory
+.)cd (change directory):-it help you to change the directory
 
     cd (name of file or anythings wher you want to go)
 
-3.)if you want to come back then 
+.)if you want to come back then 
 
       cd ..(back before you now if you want or back then again cd ..)
 
-4.)when you onto your desktop by cd desktop and you want to see all file avilabel on desktop simpely tpye
+.)when you onto your desktop by cd desktop and you want to see all file avilabel on desktop simpely tpye
 
       ls (list )
 
-5.)if you want to make any director(folder)
+.)if you want to make any director(folder)
 
     mkdir (folder nmae you want to make) (mkdir means make directory)
 
-6.)if you want to make file in any folder then
+.)if you want to make file in any folder then
 
       touch (file name)
 
-7.)when you make the file inside folder and you want to see what written in file then
+.)when you make the file inside folder and you want to see what written in file then
 
     cat (file name) (cat means contant of file)
 
-8.)how to edite the file from terminal
+.)how to edite the file from terminal
 
     vi (file name) (vi means vim)
 at right know you inside your file editor you need to type (i) for inserte in file
@@ -78,35 +78,106 @@ and then you get out from file and you can see your changes in by
 
     cat (file name) (cat means contant)
 
-9.)how to move file from one place to another file
+.)how to move file from one place to another file
 
      mv (file you want to move) (file name you want to save) (mv means move)
 
-10.)how to copy file one folder to another folder :-this only work for copy file from one folder to another folder 
+.)how to copy file one folder to another folder :-this only work for copy file from one folder to another folder 
 
     cp (name of folder wher you want to copy) (file name you want to copy)
 
 
-11.)if you want to copy folder to another folder (cp means copy)
+.)if you want to copy folder to another folder (cp means copy)
 
      cp -r (folder name you want to move ) (folder name you want to copy the folder)
 
-12.)for delete file (rm means remove)
+.)for delete file (rm means remove)
 
       rm (file name)
 
-13.)if you put (node) in terminal then you can get into (like editor) and you can run code in terminal
+.)if you put (node) in terminal then you can get into (like editor) and you can run code in terminal
 
         node
 
-14.)for further help in exit or anything then
+.)for further help in exit or anything then
 
      .help
      .exit
 
-15.)npm (node package manager) by the help of this you can install external liberary like:-express,bodyparserand,fs (filesystem)
+.)npm (node package manager) by the help of this you can install external liberary like:-express,bodyparserand,fs (filesystem)
 
       npm install (any library you want to downlode)
+
+.)this command to know all details of any file and any things for this you need to at that place wher you want to know  
+
+      ls -l
+
+
+ .)if you want to delete the folder then
+
+      rm -r (folder name)
+
+ .)if you want to see all file and folder in reverse oder
+
+        ls -r
+
+.)if you want to putout some specfic file then
+
+      ls -l | grep .json,md,yamal (after . put file name fater .)
+      ls -lr | grep .json,md,yamal (in this case you getout in reverse oder)
+
+.) if you want to say anything from your mack go to terminal
+
+         say (type what ever you want to say)
+
+.)if you want to write in file you can use vi (file name) and also use cat
+
+        cat > (file name)
+        (for save file controle + d)
+if you want to add something new to this file then 
+
+      cat >> file
+      (for save control+d)
+
+ .) if you want to change the file or folder name 
+
+     mv (file and folder name you want to c hange)  (name you want but it is new name that not exist in you system)
+
+ .)if you want to copy the directory to another directory
+
+       cp -r (folder name you want to move) (the place you want to move yoour folder)
+
+ .)for remove the folder 
+
+     rm -r (folder name)
+
+ .)if you want to know all the hidden files and folder for that(hidden folder starts with . )
+
+    ls -a
+
+ .)if you want to delete the hidden folder
+
+       rm -rf (.folder name)
+
+ .)if you want to print any things you want 
+ 
+        echo "message"
+     
+        
+
+.)if you want to find path 
+
+      echo $path
+      (if you want to check then cd past path)
+
+ .)if you want to see occurence of particuler word in whice line of your code 
+
+      grep (the word) (in which file)
+      
+.) if you want to see in how many line the particular word occur
+
+      grep -c (word) (file)
+
 
 
 
