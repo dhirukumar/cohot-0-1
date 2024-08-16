@@ -1,0 +1,26 @@
+#to{
+    background-image: url(oo.jpg);
+    background-size: cover;
+    z-index: 1;
+    
+    
+}
+/* #a1{
+    color: rgb(73, 135, 190);
+}
+#a2{
+    color: rgb(76, 122, 162);
+} */
+p{
+    color: bisque; /*you can also use upper methode for colouring text*/
+    
+}
+div{
+    color: blue;
+    position:fixed;
+    top:100px;
+right: 10px;
+ background-image: url(a.jpg);
+ background-size: cover;
+font-size:30px;
+}

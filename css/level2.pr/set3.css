@@ -1,0 +1,45 @@
+/*q1*/
+/* div{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(40, 135, 40);
+} */
+
+/*q2*/
+*{   /*first we set padding and margin 0 for better utilation*/
+    padding: 0px;
+    margin: 0px;
+    
+}
+div{
+height: 60px;
+background-color:#0f1111;
+
+}
+#logo{
+    color: #f08804;
+    margin-top: 10px;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 5px;
+    
+}
+#a{
+    color: rgb(231, 231, 231);
+    margin-right: 190px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+#aa{
+    margin-right: 190px;
+    color: #ece9e6;
+    margin-left:90px ;
+    text-decoration: none;
+}
+#button{
+    color: #ece9e6;
+    background-color: #f08804;
+    font-family:inherit;
+    margin-top: 10px;
+}

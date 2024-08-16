@@ -1,0 +1,78 @@
+#contant{
+   height: 488px;
+   width: 400px;
+   
+   
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#headerdiv{
+    background-color: black;
+    height: 80px;
+    
+}
+#am{
+    color: #ff0880;
+    font-size: 25px;
+    margin-right: 160px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+#ac{
+    color:azure;
+    margin-right: 160px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+#co{
+color: azure;
+margin-right: 160px;
+text-decoration: none;
+margin-top: 10px;
+}
+#he{
+    color: azure;
+    margin-right: 160px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+button{
+    background-color: #ff0880;
+}
+#div1{
+    border-color:black;
+    border-style: dashed;
+    background-color: aqua;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+    
+}
+#div2{
+    border-color:black;
+    border-style: dashed;
+    background-color:rgba(122,132 ,122, 0.5);
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    
+
+}
+#div3{
+    border-color:black;
+    border-style: dashed;
+    background-color: blueviolet;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    opacity: 0.5;
+   
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+}

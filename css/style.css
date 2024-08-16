@@ -1,0 +1,264 @@
+h1{
+    color: pink;
+    
+}
+#op{
+    z-index: 1;
+}
+p{
+    color:#ffff00;
+     
+}
+button{
+    color: rgb(10, 58, 95);
+    background-color: black;
+}
+body{
+    background-color: rgb(58, 58, 108);
+    /*set background image*/
+    background-image: url(a.jpg);
+    background-size: contain;
+}
+*{     /*universal selector*/
+    text-transform: uppercase;
+    margin: 0px;
+    padding:0px ;
+} 
+#hellow{    /*in this case we selecte by giving id that we written in our index file*/
+    color: rgb(58, 16, 16);
+}
+.myclass{
+    color:black;
+    text-align: center;
+    text-decoration: dotted underline;
+    height: 20px;  /*you can change hight of this text it all in term of box you can see by inspact it*/
+    width: 500px; /*you can change width of this text it all in term of box you can see by inspact it */
+    background-color:rgba(216, 16, 16,0.10) ; /*gives you blures effect*/
+}
+.lorem{ /* you can change the alignment of text */
+        text-align:center;
+}
+a{
+    color: black;
+    text-decoration: none; /*it is use for not give any underline in our link and don't decore anything in our text*/
+}
+p1{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*this is all font famliy in which some browser support few font family so when one is not work then second one work*/
+    font-size: 25px;
+    line-height: 30 px; /*gap between line*/
+    text-transform: lowercase;
+}
+p2{
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+p3{
+    font-weight:lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+p4{
+    font-weight:normal;
+    font-family:  Geneva, Tahoma, sans-serif;
+    text-transform:unset;
+}
+#ok{
+    /* width: 50px;
+    border: solid;
+    border-color: #be3965; */
+    /*this three line same as this one line shortcut*/
+    border: 5px dotted brown; /* 1st width 2nd boder-style 3ed boder-colour*/
+    background-color: bisque;
+    /* border: dotted; */
+    /* border-width: 5px; */
+    /* box-shadow: rgb(11, 1, 109); */
+    border-radius: 30px; /*for corner round*/
+    
+} 
+#oo{
+    background-color: aqua;
+    width: 100px; /*and set hight and width same in case of circle formation*/
+    height: 100px;
+    border-radius: 50px; /*for making circle you need to set radius at 50px*/
+}
+.okk{
+    height: 100px;
+    width: 400px;
+    background-color: blanchedalmond;
+    padding-left: 30px;
+    padding-top: 10px;
+    border: #09376b;
+    border: dotted;
+    border-width: 5px;
+    padding-right: 30px; /*you can see pading by inspact */
+    padding: 1px 2px 3px 4px; /*clock wise shorthand top,right,bootam,left  */
+    margin-top: 100px; /*gap between two div or boxes*/
+    margin-left:50px ; /*it is use to shift boxes*/
+    margin: 50px 20px 30px 40px; /*shorthand for margin*/
+    
+}
+div{
+    background-color:rgba(122,132,123, 0.50); /*in this a gives you bleres effect in between 0-1*/
+    display: inline; /*div behave like line not like box*/
+
+}
+button{
+    background-color: #07a26a; /*button behave like box not line*/
+   /* display:block; */
+   display: inline-block;/*in this you can set upper or bottam margin or padining because you can not  set margin or padding in line */
+   display: none; /*gayab chu mantar with tin tapak tam-tam8 inthis it not take place*/
+   visibility: hidden;  /*in this it is take gap but it is invisibil*/
+} 
+#ddiv{
+    display:inline;
+    background-color: #ffff00;
+    color: aquamarine;
+}
+/*you can also give the px in term of % which is based on parent class*/
+#div1{
+    height: 100px;
+    width: 100px;
+    background-color: #09376b;
+    display: block;
+    font-size: 10px;
+
+   
+}
+#div2{
+    height: 100px;
+    width: 60%;
+    background-color: #ffff00;
+    display: block;
+    font-size: 2em; /*two times of the size of text*/
+    width: 2em ;/*it means the withe of div2 is 2*10 so it is 20px*/
+    /* height: 100vh; is take the hight of brouser in this case 100 full hight of screen */
+
+}
+
+#em{
+    font-size: 10px;
+    
+}
+#pm{
+    font-size: 2em;
+}
+/*this is default static position*/
+#div11{
+    height: 100px;
+    width: 100px;
+    background-color:aqua;
+    display: inline-block;
+    border: 2px dotted black;
+    position: fixed;
+    top:150px;
+    left: 30px;
+    /*this is relative position*/
+    /* position: relative; /*it take the parent class* */
+    /* top:100px;
+    left:20px in this case div11 overlap on div22 */
+    /*z-index concept*/
+    z-index: 1;
+}
+#div22{
+    height: 100px;
+    width: 100px;
+    background-color:aqua;
+    display: inline-block;
+    border: 2px dotted black;
+    /*absolute take nearest non-static parent */
+    position:absolute; /*it fix the block on the basis on browser in this case body was nearest non static base*/
+    /* top:20px; */
+    right: 10px;
+    left:20px;
+    bottom: 100px;
+    /*add image in background of div222*/
+    background-image: url(oo.jpg);
+    background-size: cover;
+} 
+#div33{
+    height: 100px;
+    width: 100px;
+    background-color:rgb(197, 53, 1);
+    display: inline-block;
+    border: 2px dotted black;
+    color: #ffff00;
+    /*position in fixed it takes on bases of browser*/
+     /*this is fixed the block at this point and when you scrool if fixed at this place*/
+     /* position: fixed;
+    right: 20px; 
+    top:40px;  */
+    /* position: static;
+    top:200px; */
+  position: sticky;
+  left: 300px;
+  top:20px;
+  /*z-index concept*/
+  z-index: 1 ;
+  /*adding background image*/
+  background-image: url(oo.jpg);
+  background-size: contain;
+    
+}
+#div44{
+    /* height: 100px;
+    width: 100px; */
+    /* background-color:rgb(67, 61, 137); */
+    display: inline-block;
+    border: 2px dotted black;
+    position: sticky;
+    top:400px;
+    left: 60px;
+    
+}
+.contaner{
+   height: 100px;
+   width: 200px;
+   top: 50px;
+   /*flex is v.v.i in this box automatic changre the shape*/ 
+   display: flex;
+   flex-direction:row;/*there are four flex 1.)row 2.)row-reverse 3.)colum 4.)colum-reverse*/
+   justify-content:center; /*foe get all box in center*/
+   justify-content: space-around; /*this take space on all space and sperede it*/
+   justify-content: space-between;
+   justify-content: space-evenly;
+   border: 4px solid black;
+   /* flex-wrap: wrap; */ /*study more about this tag*/
+   /* align-items:flex-start; */
+   /* align-content: flex-end; */
+
+}
+.box1{
+    height: 80px;
+    width: 80px;
+    background-color: #07a26a;
+    z-index: 1;
+    left: 100px; 
+}
+.box2{
+    height: 80px;
+    width: 80px;
+    background-color: aqua;
+    z-index: 1;
+    /* align-self: self-end; for spacfic box */
+    flex-shrink: 0;
+    
+}
+.box3{
+    height: 80px;
+    width: 80px;
+    background-color: beige;
+    z-index: 1;
+    flex-shrink: 2;
+ 
+}
+.box4{
+    height: 80px;
+    width: 80px;
+    background-color: aquamarine;
+    z-index: 1;
+    flex-grow: 2;
+}
