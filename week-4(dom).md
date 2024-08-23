@@ -371,6 +371,8 @@ document.getElementById("ho").addEventListener("click",function(){
     }
 </style>
 </html>
+
+all slides of DOM in the following
     
 [4.1.pdf](https://github.com/user-attachments/files/16733155/4.1.pdf)
 
