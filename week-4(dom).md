@@ -358,7 +358,19 @@ document.getElementById("ho").addEventListener("click",function(){
 <br>
 <br>
 <hr>
-<!--  -->
+<!-- in this proggram you will learn how to add two number with the helpe of DOM -->
+<input type="number" placeholder="number" id="in1">
+<input type="number" id="in2" placeholder="number">
+<button onclick="mmm()">add</button>
+<p id="pt" style="font-size: 30px;"></p>
+<script>
+    function mmm(){
+    const ab=document.getElementById("in1").value;
+    const bc=document.getElementById("in2").value;
+    const sum=Number(ab)+Number(bc)
+    document.getElementById("pt").innerHTML="sum: "+ sum;
+}
+</script>
 
 </body>
 </html>
