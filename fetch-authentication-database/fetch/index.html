@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="getanimaldata()">get animal data</button>
+    <script>
+
+//in this you learn about how to fetch the data from api
+
+// function getanimaldata(){
+// fetch("https://fakerapi.it/api/v1/persons")
+
+//  .then(function(response){ //just focus on one thing when you go to you server and click on button then inside inspact console id shoe promise pending so we can use async-await function but we can also use .then so e use .then inside .then put a function inside function define a variabal for taking the data if it again show pending then you should again use .then till the time you not get your data inside function inside function 
+//   const res=response.json()
+//   .then(function(finaldata){
+//     console.log(finaldata)
+//   })
+
+// })
+//         }
+
+
+//doing this same thing with async-await method
+async function getanimaldata(){
+    const oop= await fetch("https://fakerapi.it/api/v1/persons")
+    const pp=await oop.json()
+    document.getElementById("user").innerHTML=JSON.stringify(pp)//it help to stringify the JSON file and yes json in capital word
+    // console.log(pp)
+}
+</script>
+<div id="user"></div>
+</body>
+</html>
