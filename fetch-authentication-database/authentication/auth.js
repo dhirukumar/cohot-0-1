@@ -2,7 +2,6 @@ const express = require("express");
 const jwt = require("jsonwebtoken");
 const app = express();
 const port = 3000;
-
 app.use(express.json());
 
 const jwtpassword = "your_jwt_secret_key"; // Define the JWT secret
