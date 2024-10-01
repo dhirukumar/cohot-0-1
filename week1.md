@@ -3,7 +3,7 @@
 # lec 1
 
 
-     let firestname="dhiru"; //let and vare same
+    let firestname="dhiru"; //let and vare same
      const age=20;   //const not mutable
       // let ismarred=true;
       // console.log("this person name is "+fire+" and his age is "+age)
