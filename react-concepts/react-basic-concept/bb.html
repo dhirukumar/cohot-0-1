@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="risecount()" id="a1">count 0</button>
+    <script>
+        function risecount(){
+            let pp=document.getElementById("a1").innerHTML;
+            console.log(pp.split(" "))//output will be ['count','1']
+            let pre=pp.split(" ")[1]//[1] indicate the 2nd element in ["count","1"]
+            let after=parseInt(pre)+1;//you can not add string into int so firest paesrint the string and then add to int
+            document.getElementById("a1").innerHTML="count "+after;
+        }
+    </script>
+</body>
+
+</html>

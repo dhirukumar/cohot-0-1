@@ -1,0 +1,67 @@
+<!--in this file we use react concept ot create this but this is not based on fully react-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- this is my own way to write code in min line-->
+    <!-- <div id="div">
+    
+    </div>
+    <button onclick="main()" id="button">count 0</button>
+    <script>
+        let state={
+            count:0
+        }
+
+
+   function main(){
+    state.count++;
+    rerender();
+
+   }
+        function rerender(){
+            const pp=document.getElementById("button").innerHTML=`count ${state.count}`
+        }
+       
+    </script> -->
+
+
+
+    <!--the proper form of write the code like difine all three things (state,component,rerendering)-->
+    <div id="div">
+
+    </div>
+    <script>
+        //initilised state
+        const state={
+            count:0
+        }
+        //this main fumction is called when you press on button and main function also called rerender function to change the valus of count
+        function main(){
+            state.count++;
+            rerender();
+        }
+        //component in this case count
+        function component(){
+            const button=document.createElement("button");
+            button.innerHTML=`count ${state.count}`;
+            button.setAttribute("onclick", `main()`); //if you click on button main function is called
+            return button
+
+        }
+        //this is rerendring to help to change the value of count and also call component function
+        function rerender(){
+            document.getElementsById("div").innerHTML="";
+            const neww=component(state.count);
+            document.getElementById("div").appendChild(neww);
+        }
+        rerender() //this rerender function is called because we want to shor count:0 on screen
+    </script>
+    
+</body>
+</html>
