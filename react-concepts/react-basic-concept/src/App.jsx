@@ -2,52 +2,52 @@
 import { useState } from 'react'
 
 //counter code
-// function App() {
-//   //this is state
-// const[count,setCount]=useState(0)
+function App() {
+  //this is state
+const[count,setCount]=useState(0)
  
-// function onclickhandler(){
-//   setCount(count+1)
-// }
-//   return (
-//     //  //  this is component
-//     <div>
-//       <button onClick={onclickhandler}>count {count}</button>
-//     </div>
-//   )
+function onclickhandler(){
+  setCount(count+1)
+}
+  return (
+    //  //  this is component
+    <div>
+      <button onClick={onclickhandler}>count {count}</button>
+    </div>
+  )
      
-// }
-// export default App
+}
+export default App
 
 
 
 // //counter code in anothe method 
-// function App() {
-//   // This is the state
-//   const [count, setCount] = useState(0);
+function App() {
+  // This is the state
+  const [count, setCount] = useState(0);
 
-//   return (
-//     // This is the component 
-//     <div>
-//       <CustomButton count={count} setCount={setCount} ></CustomButton>
-//       {/* <CustomButton count={count-1} setCount={setCount} />
-//       <CustomButton count={count+1} setCount={setCount} /> */}
-//     </div>
-//   );
-// }
+  return (
+    // This is the component 
+    <div>
+      <CustomButton count={count} setCount={setCount} ></CustomButton>
+      {/* <CustomButton count={count-1} setCount={setCount} />
+      <CustomButton count={count+1} setCount={setCount} /> */}
+    </div>
+  );
+}
 
 // // Make our own component by making your own component you can call this many times with some changes
-// function CustomButton(props) {
-//   function handleClick() {
-//     props.setCount(props.count + 1);
-//   }
+function CustomButton(props) {
+  function handleClick() {
+    props.setCount(props.count + 1);
+  }
 
-//   return (
-//     <button onClick={handleClick}>
-//       count {props.count}
-//     </button>
-//   );
-// }
+  return (
+    <button onClick={handleClick}>
+      count {props.count}
+    </button>
+  );
+}
 
 
 //todo react
