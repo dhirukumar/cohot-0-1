@@ -154,5 +154,28 @@ const Op=memo(({op})=>{ //useCallback use in this type of case whe you define a 
   console.log("mknknd")
 })
 
+//useRef
+
+import { useEffect, useRef, useState } from 'react'
+import './App.css'
+
+function App() {
+  const [tax, settax] = useState(2000)
+
+ const divRef=useRef()
+
+ useEffect(()=>{
+  setInterval(()=>{
+    divRef.current.innerHTML=10;
+  },5000)},[])
+  return (
+
+      <div>
+      your tax is <div ref={divRef}>{tax}</div>
+      </div>
+  )
+
+}
+export default App
 
 
