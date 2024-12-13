@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline text-red-950">
+    Hello worldd!
+  </h1>
+  <!-- flex in css -->
+  <div class="flex justify-between items-center text-red-500">
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+    <div>Item 4</div>
+  </div>
+<!-- grid in css-->
+  <div class="grid grid-rows-3 grid-cols-3 gap-10">
+    <div class="row-span-1 col-span-1">Item 1</div>
+    <div class="row-span-3 col-span-2">Item 2</div>
+    <div class="row-span-2 col-span-1">Item 3</div>
+  </div>
+<!-- responsive text when screen change the text font change -->
+  <div class="text-lg md:text-xl lg:text-2xl xl:text-3xl">
+    Responsive Text
+  </div>
+</body>
+</html>  
+  
+
+<!-- how to connect index.html to tailwind -->
+
+<!-- 
+1st make a package.json by this npm init
+2nd make a index.html file
+3ed make a style.css file
+4th npm install -D tailwindcss
+    npx tailwindcss init  run this command
+
+5th add the path of index.html into tailwind.config.js in contend arr
+6ht paste this
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+into your style.css file
+
+7th npx tailwindcss -i ./style.css -o ./output.css --watch 
+run this command in place of -i(inpute css) put the path of your css file and -o(output file) type the name you want for your output class
+
+8th   <link href="./output.css" rel="stylesheet"> add this output css file into your html file
+done good go to use all tailwind class 
+
+9th v.v.i when you reopen this file into your vs code you need to paste this command into your terminal for add
+ inpute and output file for this time (npx tailwindcss -i ./input.css -o ./output.css --watch  ) -->
