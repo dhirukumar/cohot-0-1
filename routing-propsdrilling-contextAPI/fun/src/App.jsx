@@ -139,7 +139,7 @@ function App(){
   return(
     <div>
  <CountContext.Provider value={{count, setcount}}> {/* we give another {} in this because in Button component we need two prope count and setcount so for call in singal in this is used at that palce like this const {count,setcount} that's why we put inside this again {} when you call a singal state at that time also you use this like this cont {count}*/}
-<Count setcount={setcount}></Count>
+<Count></Count>
 </CountContext.Provider> 
     </div>
   )
