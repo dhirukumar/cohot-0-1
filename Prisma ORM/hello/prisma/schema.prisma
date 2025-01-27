@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+//1.)when you change anything in schema you need to migrate the new schema by run thid command (npx prisma migrate dev --name init)
+//2.) and open the new prisma studio for see new schem by run this comand (npx prisma studio)
+model User {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  posts Post[]
+  todo  Todo[]
+}
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String?
+  published Boolean @default(false)
+  authorId  Int?
+  author    User?   @relation(fields: [authorId], references: [id])
+}
+model Todo {
+  id       Int    @id @default(autoincrement())
+  title    String
+  content  String?
+  author   User?  @relation(fields: [authorId], references: [id])
+  authorId Int?
+}
