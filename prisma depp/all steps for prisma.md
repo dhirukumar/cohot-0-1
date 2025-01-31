@@ -11,8 +11,6 @@ This is a [Click here](https://www.prisma.io/docs/getting-started/setup-prisma/s
 
 //5.)and you need a .env and prisma shema file for that (npx prisma init)
 
-//6.)in those file you want to use prisma schema you need to import prisma client like(import { PrismaClient } from '@prisma/client';
-
-// and initialised it const prisma = new PrismaClient()
+//6.)in those file you want to use prisma schema you need to import prisma client like (import { PrismaClient } from '@prisma/client';) and initialised it const prisma = new PrismaClient()
 
 // 7.) and also make the async/await in CRUD opration 
