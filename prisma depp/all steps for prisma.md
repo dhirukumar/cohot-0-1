@@ -1,5 +1,5 @@
-//if you want to read from prisma to how to set up project from scratch 
-
+//if you want to read from prisma to how to set up project from scratch  
+This is a [Click here](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch) to visit the website.
 
 //1.)you need to install json file in which you store your all depandency by (npm init -y)
 //2.)you need a ts.config file for that (npx tsc --init)
