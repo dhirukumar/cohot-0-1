@@ -15,4 +15,4 @@ This is a [Click here](https://www.prisma.io/docs/getting-started/setup-prisma/s
 
 // and initialised it const prisma = new PrismaClient()
 
-// ) and also make the async/await in CRUD opration 
+// 7.) and also make the async/await in CRUD opration 
