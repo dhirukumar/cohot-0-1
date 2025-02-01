@@ -1,0 +1,54 @@
+//if you select any queries  and run then run only selected part
+//always use '' instied of ""
+
+//this is how you create any table using pgadmin
+CREATE TABLE admin (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(5) UNIQUE NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE user (
+id SERIAL PRIMARY KEY,
+username VARCHAR(70) UNIQUE,
+email VARCHAR(255) NOT NULL
+)
+
+//this is to change the data type of column
+ALTER TABLE myuser  
+alter COLUMN password type VARCHAR(39);
+
+//this is how you set the data type in existing column
+alter table myuser
+alter column password set not null
+
+
+//this is how you add any column in any existing table
+ALTER TABLE myuser 
+ADD COLUMN password VARCHAR(20);
+
+
+//this is how you update existing row with iving there id 
+UPDATE myuser
+set username='dhirukumar'
+where id=1
+
+
+//this is how you delete any row inside any table
+DELETE FROM myuser
+where id=1
+
+//this is how you add a row in 
+INSERT INTO myuser (username,email)
+VALUES ('fffff','gh@gmail.com') //in place of "" use '' this will not show any error
+
+//by this way you can get you row details
+SELECT * FROM myuser
+WHERE id = 2;
+
+//this is you can get specfic data
+select email from miyuser
+where id=2
