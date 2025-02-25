@@ -56,11 +56,16 @@ npm install
 
  ## nginx
 
+<img width="686" alt="Screenshot 2025-02-25 at 7 01 39 PM" src="https://github.com/user-attachments/assets/f4b8eee9-3122-41f9-aab5-e7a3684b568a" />
+
+
 ### nginx defalt port is 80 which is not secure
 
  ### nginx is used for reverse-proxy what it mean
 
  ### see when you have a machine and you want to host not only one backend more then one for that how the different dns know at what port i hit inside your instance to get true sit in this case reverse-proxy came into picture there are lot of another way to do reverse-proxy but in i use nginxin this case
+
+<img width="1440" alt="Screenshot 2025-02-24 at 3 37 33 PM" src="https://github.com/user-attachments/assets/8977172e-9847-4d93-8ae2-abdbfe3dc34d" />
 
 
  ### so firest you need to downlode nginx into your machine you need to came out to this sum-server file and install nginx into your instance not into your sum-server file 
@@ -69,26 +74,26 @@ npm install
 
 ### for install nginx 
 
-sudo apt update
-sudo apt install nginx
+     sudo apt update
+     sudo apt install nginx
 
 ### after that you need to edit the nginx.conf file or you can delete you nginx.config file and re-write the file contant by this
 
 ## delete nginx.conf file contant
 
-  sudo rm sudo vi /etc/nginx/nginx.conf
+     sudo rm sudo vi /etc/nginx/nginx.conf
 
 ## insert new contant to this file
 
-  sudo vi /etc/nginx/nginx.conf
+      sudo vi /etc/nginx/nginx.conf
 
 ### and insert this into your nginx.conf file
 
       events {
     # Event directives...
-}
+     }
 
-http {
+      http {
 	server {
     listen 80;
     server_name be1.100xdevs.com;(be1.100xdevs.com:-in this place you can put your domain name or if you do not have your domain name then put your instance dns or ipv4 to directly access your backend)
@@ -102,7 +107,7 @@ http {
         proxy_cache_bypass $http_upgrade;
     }
 	}
-}
+    }
 
 ### what you have put your server_name (this) by this you can access you backend from your browser
 
@@ -112,9 +117,9 @@ http {
 
       events {
     # Event directives...
-}
+      }
 
-http {
+    http {
 	server {
     listen 80;
     server_name be1.100xdevs.com;
@@ -141,7 +146,7 @@ http {
         proxy_cache_bypass $http_upgrade;
     }
 	}
-}
+     }
 
 
 ### 
@@ -172,11 +177,11 @@ http {
       pm2 restart my-app
       pm2 listin
       pm2 delete my-app
-* Monitor App Performance
-      pm2 monit
-* Auto-Restart Apps on System Reboot
+ #### Monitor App Performance
+     pm2 monit
+ #### Auto-Restart Apps on System Reboot
      pm2 startup
-* Save your running processes
+ #### Save your running processes
       pm2 save
 
 ### at this point you hosted your backend onto aws but your sit is hosted on http(port 80) which is not secure for that you need https(port 443) for that you need a certificate how you will find you certificate for your backend for that 
