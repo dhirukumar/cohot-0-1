@@ -4,7 +4,9 @@
 ## also initilised tdconfig and set rootdir and outdir
 
     npx tsc --init
+## when you make your quary inside src/index.ts using pg library you need to change into .js into dist/index.js and run it
 
+        node dist/index.js
 ##  There are two cLI best editor postgrace first one is psql you can connect your postgrace using psql and see the all tables and data inside tables 
  ## How you can see tables in your postgrace database with the help of psql 
  
