@@ -7,6 +7,9 @@
 ## when you make your quary inside src/index.ts using pg library you need to change into .js into dist/index.js and run it
 
         node dist/index.js
+
+<img width="1273" alt="Screenshot 2025-03-10 at 9 50 00 PM" src="https://github.com/user-attachments/assets/277791e4-3844-4052-a84c-6561c0f66ea7" />
+
 ##  There are two cLI best editor postgrace first one is psql you can connect your postgrace using psql and see the all tables and data inside tables 
  ## How you can see tables in your postgrace database with the help of psql 
  
