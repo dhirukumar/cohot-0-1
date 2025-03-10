@@ -20,7 +20,8 @@
 
 ### Let us see how to install postgrace image 
 
-       docker run -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres 
+       docker run -e POSTGRES_PASSWORD=mysecretpassword -d -p 5422:5432 postgres 
+### in this case database and username both are postgres host is localhost and post is 5422
 
 ### This upper command install postgrace image into your docker dashboard and also run this image and also set the port forwarding means the local host 5432 forward to docker post grace in detached mode means you can just only Run one time it set for always until you kill the docker container if you want to see your docker or mono DB container is running or not you can check by this,nd 
 
