@@ -1,0 +1,19 @@
+{
+  "name": "prisma-recap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@prisma/client": "^6.4.1",
+    "prisma": "^6.4.1"
+  },
+  "dependencies": {
+    "@prisma/extension-accelerate": "^1.2.2"
+  }
+}
