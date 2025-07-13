@@ -1,0 +1,11 @@
+{
+  "extends": "@repo/typescript-config/base.json", //only extends the base config and amke a source root file then you done to work with your backend file 
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    
+  },
+  
+}
+
+

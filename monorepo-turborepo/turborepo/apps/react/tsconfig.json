@@ -1,0 +1,8 @@
+{
+  "extends": "@repo/typescript-config/react-library.json", //this ts config extention for react 
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
